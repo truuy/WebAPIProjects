@@ -1,0 +1,58 @@
+Users table:
+This table stores information about the users of the expense tracker application.
+The UserID column is the primary key of the table and serves as a unique identifier for each user.
+The Username column stores the username chosen by the user.
+The Password column stores the hashed password of the user for authentication purposes.
+The Email column stores the email address of the user.
+
+Categories table:
+This table is used to categorize expenses in the application.
+The CategoryID column is the primary key and serves as a unique identifier for each category.
+The Name column stores the name of the category.
+The Description column provides additional details or description for the category.
+
+Tags table:
+This table is used to associate tags with expenses, allowing users to further label and organize their expenses.
+The TagID column is the primary key and serves as a unique identifier for each tag.
+The Name column stores the name or label of the tag.
+The Description column provides additional details or description for the tag.
+
+Expenses table:
+This table stores the actual expense records entered by users.
+The ExpenseID column is the primary key and serves as a unique identifier for each expense.
+The UserID column is a foreign key referencing the UserID column in the Users table, establishing a relationship between users and their expenses.
+The CategoryID column is a foreign key referencing the CategoryID column in the Categories table, associating expenses with their respective categories.
+The Amount column stores the expense amount.
+The Date column stores the date of the expense.
+The Description column provides a description or additional details about the expense.
+
+ExpenseTags table:
+This table is used to establish a many-to-many relationship between expenses and tags.
+The table contains two columns, ExpenseID and TagID, both of which are foreign keys referencing the ExpenseID column in the Expenses table and the TagID column in the Tags table, respectively.
+This structure allows an expense to be associated with multiple tags, and a tag to be associated with multiple expenses.
+
+Users:
+Users can register an account by providing a username, password, and email.
+They can log in to the application using their credentials for authentication.
+The Users table stores user information, allowing the application to identify and differentiate between different users.
+
+Categories:
+Users can create, manage, and customize expense categories based on their preferences.
+They can assign expenses to specific categories to organize and categorize their spending.
+The Categories table provides a list of available categories for users to choose from and associate with their expenses.
+
+Tags:
+Users can create tags to further label and classify their expenses.
+They can assign multiple tags to an expense to provide additional information or group related expenses.
+The Tags table allows users to create and manage their own tags, enabling flexible organization and analysis of expenses.
+
+Expenses:
+Users can add new expense records, specifying details such as the amount, date, and description.
+They can associate expenses with specific categories to indicate the spending category.
+Users can also assign relevant tags to their expenses to provide additional labels or group expenses based on specific criteria.
+The Expenses table stores the actual expense records, allowing users to track and manage their spending over time.
+
+ExpenseTags:
+Users can associate multiple tags with each expense to provide further classification or grouping.
+This table establishes a many-to-many relationship between expenses and tags, allowing users to tag expenses with relevant keywords or labels.
+The ExpenseTags table enables users to categorize and analyze their expenses based on various criteria or themes.
