@@ -18,8 +18,20 @@ builder.Services.AddDbContext<ExpenseTrackerContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("VideoShopConnectionString")));
 
 // Register services and repositories
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+//Configure Cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("allowSpecificExpenseTrackerUI", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 // Configure AutoMapper
 builder.Services.AddAutoMapper(typeof(Program));
@@ -35,7 +47,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //Use Cors
-app.UseCors("default");
+app.UseCors("allowSpecificExpenseTrackerUI");
 
 app.UseHttpsRedirection();
 

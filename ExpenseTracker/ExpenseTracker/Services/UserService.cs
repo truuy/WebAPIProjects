@@ -40,8 +40,8 @@ namespace ExpenseTracker.Services
             var user = _mapper.Map<User>(userDTO);
 
             // Hash the password
-            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDTO.PasswordHash);
-            user.PasswordHash = hashedPassword;
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDTO.Password);
+            user.Password = hashedPassword;
 
             _userRepository.AddUser(user);
         }

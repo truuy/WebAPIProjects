@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj": {}
+    "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj": {
+    "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
+        "projectUniqueName": "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
         "projectName": "ExpenseTracker",
-        "projectPath": "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
+        "projectPath": "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
         "packagesPath": "C:\\Users\\Troy\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\obj\\",
+        "outputPath": "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

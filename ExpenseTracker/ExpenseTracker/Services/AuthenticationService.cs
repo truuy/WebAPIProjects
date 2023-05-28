@@ -9,6 +9,11 @@ namespace ExpenseTracker.Services
     {
         private readonly IUserRepository _userRepository;
 
+        public AuthenticationService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
         public  bool Login(LoginDTO loginDTO)
         {
             // Get the user by username
@@ -20,7 +25,7 @@ namespace ExpenseTracker.Services
             }
 
             // Validate the password
-            if (!VerifyPassword(loginDTO.Password, user.PasswordHash))
+            if (!VerifyPassword(loginDTO.Password, user.Password))
             {
                 // Invalid password
                 return false;
@@ -33,9 +38,7 @@ namespace ExpenseTracker.Services
         private bool VerifyPassword(string password, string passwordHash)
         {
             // Compare the provided password with the stored password hash
-            // You can use your preferred password hashing mechanism here
 
-            // Example using BCrypt:
             return BCrypt.Net.BCrypt.Verify(password, passwordHash);
         }
 

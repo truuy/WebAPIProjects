@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* Logo -------------------------------------------------*/
+.logo-container
+{
+    overflow-wrap: break-word;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #383E56;
+}
+
+.logo-container p
+{
+    font-weight: 100;
+    color: #F69E7B;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.logo-container img
+{
+    transform: rotate(20deg);
+    padding-top: 3vw;
+    width: 15vw;
+}
+
+.logo-container h1
+{
+    font-weight: 900;
+    color: #EEDAD1;
+    text-align: center;
+    font-size: 5vw;
+}
+
+/*Login Form -------------------------------------------- */ 
+.login-container
+{
+    color: #383E56;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container h1
+{
+    color: #F69E7B;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.login-container p
+{
+    font-size: 1.01vw;
+}
+
+.login-container form
+{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input design */
+.login-container input[type=text]
+{
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    padding: .5vw;
+    width: 25vw;
+    border: none;  
+}
+
+.login-container input[type=text]:focus
+{
+    outline: none;
+}
+
+.login-container .username-container
+{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #383E56 ;
+}
+
+.login-container input[type=password]
+{
+    font-weight:normal;
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    padding: .5vw;
+    width: 25vw;
+    border: none;
+}
+
+.login-container input[type=password]:focus
+{
+    outline: none;
+}
+
+.login-container .password-container
+{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #383E56 ;
+}
+
+.login-container .password-container box-icon
+{
+    width: 1vw;
+}
+
+.forgotpass-container
+{
+    margin-top: 2vw;
+    width: 25vw;
+    display: flex;
+}
+
+.forgotpass-container a
+{
+    color: #383E56 ;
+    text-decoration: none;
+    font-size: .8vw;
+}
+.forgotpass-container a:hover
+{
+    color: #F69E7B;
+}
+
+.sign-in
+{
+    color: #EEDAD1;
+    font-size: 1vw;
+    margin-top: 2vw;
+    width: 25vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    background-color: #383E56;
+}
+
+.sign-in:hover
+{
+    color: #383E56;
+    background-color: #F69E7B;
+    cursor: pointer;
+}

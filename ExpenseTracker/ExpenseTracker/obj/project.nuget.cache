@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E0lpMow1lm46KK1SbKsXEgaYyn1FNR+VcjpOX8eEs+6Te54mhQ0rwYBWFslrFSc9zQ8Xl+BYnsF4FmAAgYBXTw==",
+  "dgSpecHash": "hT4mJ5ZR5MGgalNiZTzX19J5YZVFI2IKka3I4T6wBvbDE6GQQ1Uc2aJeKBvqM+6Ggj7NR+fs5ry9dyty/jNMFQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\c#\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
+  "projectFilePath": "D:\\Projects\\CSharp\\WebAPIProjects\\ExpenseTracker\\ExpenseTracker\\ExpenseTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Troy\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Troy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
