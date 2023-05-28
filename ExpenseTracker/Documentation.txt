@@ -56,3 +56,59 @@ ExpenseTags:
 Users can associate multiple tags with each expense to provide further classification or grouping.
 This table establishes a many-to-many relationship between expenses and tags, allowing users to tag expenses with relevant keywords or labels.
 The ExpenseTags table enables users to categorize and analyze their expenses based on various criteria or themes.
+
+Expense Tracker API Documentation
+
+OVERVIEW
+The Expense Tracker API is designed to provide functionality for managing user accounts, allowing users to register, login, and perform various operations related to expense tracking.
+
+ENDPOINTS
+
+Get all users
+HTTP Method: GET
+Endpoint: /api/users
+Description: Retrieves a list of all users registered in the Expense Tracker system.
+
+Get user by ID
+HTTP Method: GET
+Endpoint: /api/users/{userId}
+Description: Retrieves a specific user based on their unique identifier.
+
+Create user
+HTTP Method: POST
+Endpoint: /api/users
+Description: Creates a new user account in the Expense Tracker system.
+Request Body:
+UserDTO: An object containing the user details, including the username and password.
+Response:
+Status Code 200 (OK): Indicates a successful user creation.
+Status Code 400 (Bad Request): Indicates a failure in creating the user, along with an error message.
+User login
+
+HTTP Method: POST
+Endpoint: /api/users/login
+Description: Authenticates a user by verifying their credentials.
+Request Body:
+LoginDTO: An object containing the user's login credentials, including the username and password.
+Response:
+Status Code 200 (OK): Indicates a successful login.
+Status Code 401 (Unauthorized): Indicates an invalid username or password.
+
+SECURITY
+The Expense Tracker API ensures the security of user accounts through the following measures:
+
+Password hashing: User passwords are securely hashed using the BCrypt algorithm, providing protection against unauthorized access to sensitive information.
+
+SERVICES
+The Expense Tracker API relies on the following services:
+UserService: Provides functionality for managing user accounts, including user creation and retrieval.
+AuthenticationService: Handles user authentication by verifying login credentials and comparing password hashes.
+
+DATA PERSISTENCE
+User data is stored in a database using Entity Framework Core, ensuring reliable and persistent storage of user information.
+
+DEPENDENCIES
+The Expense Tracker API relies on the following dependencies:
+ASP.NET Core: A framework for building web applications and APIs.
+BCrypt.NET: A library used for hashing and verifying passwords securely.
+Entity Framework Core: An object-relational mapping framework for accessing the database.
