@@ -24,11 +24,14 @@
                 <div class="password-container">
                     <input type="password" name="password" id="password" placeholder="Password" required [(ngModel)]="password">
                 </div>
-                <div class="forgotpass-container">
-                    <a [routerLink]="" (click)="register()">Don't have an account? Create one</a>
+                <div class="registrationpage-container">
+                    <a [routerLink]="" (click)="registerPage()">Don't have an account? Create one!</a>
                 </div>              
                 
                 <input class ="sign-in" type="button" id="sign-in" value="Sign in"(click)="login()">
+                <div class="forgotpassword-container">
+                    <a [routerLink]="">Forgot Password?</a>
+                </div>
             </form>
         </div>
     </div>

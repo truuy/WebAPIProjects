@@ -10,5 +10,6 @@ namespace ExpenseTracker.Services
         void CreateUser(UserDTO userDTO);
         void UpdateUser(UserDTO userDTO);
         void DeleteUser(Guid userId);
+        bool IsValidEmail(string email);
     }
 }

@@ -3,6 +3,7 @@ using AutoMapper;
 using ExpenseTracker.DTOs;
 using ExpenseTracker.Models;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 
 namespace ExpenseTracker.Services
 {
@@ -46,7 +47,11 @@ namespace ExpenseTracker.Services
             _userRepository.AddUser(user);
         }
 
-
+        public bool IsValidEmail(string email)
+        {
+           return Regex.IsMatch(email, @"^[^\s@]+@[^\s@]+\.[^\s@]+$");
+            
+        }
 
         public void UpdateUser(UserDTO userDTO)
         {

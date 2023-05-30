@@ -141,22 +141,42 @@
     width: 1vw;
 }
 
-.forgotpass-container
+.registrationpage-container
 {
     margin-top: 2vw;
     width: 25vw;
     display: flex;
 }
 
-.forgotpass-container a
+.registrationpage-container a
 {
     color: #383E56 ;
     text-decoration: none;
     font-size: .8vw;
 }
-.forgotpass-container a:hover
+.registrationpage-container a:hover
 {
     color: #F69E7B;
+    cursor: pointer;
+}
+
+.forgotpassword-container
+{
+    margin-top: 2vw;
+    
+}
+
+.forgotpassword-container a
+{
+    color: #383E56 ;
+    text-decoration: none;
+    font-size: .8vw;
+}
+
+.forgotpassword-container a:hover
+{
+    color: #F69E7B;
+    cursor: pointer;
 }
 
 .sign-in

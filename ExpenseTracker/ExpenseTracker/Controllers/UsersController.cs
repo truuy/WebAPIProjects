@@ -41,8 +41,13 @@ namespace ExpenseTracker.Controllers
         {
             try
             {
+                if(!_userService.IsValidEmail(userDTO.Email))
+                {
+                    return BadRequest("Invalid email format");
+                }
+                userDTO.UserId = Guid.NewGuid(); // Generate a new GUID for the user
                 _userService.CreateUser(userDTO);
-                return Ok("User created successfully");
+                return Ok(userDTO);
             }
             catch (Exception ex)
             {
@@ -67,5 +72,14 @@ namespace ExpenseTracker.Controllers
                 return Unauthorized(new { message = "Invalid username or password" });
             }
         }
+
+
+        [HttpDelete("{userId}")]
+        public IActionResult DeleteUser(Guid userId) 
+        {
+            _userService.DeleteUser(userId);
+            return Ok();
+        }
+
     }
 }

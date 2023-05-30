@@ -21,14 +21,15 @@
                     <input type="text" name="username" id="username" placeholder="Username" required [(ngModel)]="username">
                 </div>
                 <div class="username-container">
-                    <input type="text" name="email" id="email" placeholder="Email" required [(ngModel)]="email">
+                    <input type="text" name="email" id="email" placeholder="Email" required [(ngModel)]="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+
                 </div>       
                 <div class="password-container">
                     <input type="password" name="password" id="password" placeholder="Password" required [(ngModel)]="password">
                 </div>
                 
-                <div class="forgotpass-container">
-                    <a href="#">Forgot password?</a>
+                <div class="loginpage-container">
+                    <a href="#">Already a user? Return to Login page.</a>
                 </div>              
                 
                 <input class ="sign-in" type="button" id="sign-in" value="Sign in" (click)="register()">
