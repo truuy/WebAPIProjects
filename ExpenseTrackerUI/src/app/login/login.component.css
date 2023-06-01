@@ -188,11 +188,13 @@
     height: 2.5vw;
     border-radius: 1vw;
     background-color: #383E56;
+    transition: background-color 0.3s ease;
 }
 
 .sign-in:hover
 {
     color: #383E56;
+    transition: background-color 0.3s ease;
     background-color: #F69E7B;
     cursor: pointer;
 }
