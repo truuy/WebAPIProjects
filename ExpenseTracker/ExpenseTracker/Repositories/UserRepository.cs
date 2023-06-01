@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ExpenseTracker.Models;
+using ExpenseTracker.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace ExpenseTracker.Repositories

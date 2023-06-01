@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using ExpenseTracker.Models;
+using ExpenseTracker.Model;
 
 namespace ExpenseTracker.Repositories
 {

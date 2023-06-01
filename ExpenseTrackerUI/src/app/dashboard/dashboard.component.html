@@ -1,1 +1,59 @@
-<div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items:  center; font-size: 100px; font-weight: bold; padding-top: 400px;"> THIS IS MY DASHBOARD :)  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Oh, Berry - Dashboard</title>
+</head>
+<body>
+    <nav class="side-nav">
+        <div class="logo">
+            <h1>Orange Blueberry</h1>
+        </div>
+        
+        <div class="nav-links">
+            <input type="checkbox" id="menu-toggle">
+            <label class="burger-menu" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+            <ul class="menu">
+                <li><a href="#"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                <li><a href="#"><i class='bx bx-line-chart' ></i> Analytics</a></li>
+                <li><a href="#"><i class='bx bxs-user' ></i> Profile</a></li>
+                <li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+                <li><a href="#"><i class='bx bxs-help-circle' ></i> Help</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <main class="content">
+        <div class="welcome">
+            <h2>Hello, User!</h2>
+            <p>Welcome to your Expenses Dashboard! Gain control over your finances, track your spending, and make informed financial decisions. Start your journey towards financial well-being today!</p>
+        </div>
+
+        <div class="top-cards">
+            <div class="card">
+                <div class="card-content balance">
+                  <h2>Your Balance</h2>
+                  <p>PHP 1,500.00</p>
+                </div>
+                <div class="income-expense">
+                    <div class="income">
+                        <p><i class='bx bx-up-arrow-alt' style="color: rgb(48, 243, 48);"></i>PHP 0.00</p>
+                        <p>Income Today</p>
+                    </div>
+                    <div class="expense">
+                        <p><i class='bx bx-down-arrow-alt' style="color: rgb(255, 6, 6);"></i>PHP 0.00</p>
+                        <p>Expenses Today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

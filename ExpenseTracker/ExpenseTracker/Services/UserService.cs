@@ -1,7 +1,7 @@
 ﻿using ExpenseTracker.Repositories;
 using AutoMapper;
 using ExpenseTracker.DTOs;
-using ExpenseTracker.Models;
+using ExpenseTracker.Model;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
 

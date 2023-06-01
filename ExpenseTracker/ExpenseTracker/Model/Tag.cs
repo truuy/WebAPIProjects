@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExpenseTracker.Models;
+namespace ExpenseTracker.Model;
 
 public partial class Tag
 {

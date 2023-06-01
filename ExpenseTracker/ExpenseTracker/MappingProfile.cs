@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ExpenseTracker.DTOs;
-using ExpenseTracker.Models;
+using ExpenseTracker.Model;
     public class MappingProfile : Profile
     {
         public MappingProfile()

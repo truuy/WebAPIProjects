@@ -1,5 +1,5 @@
 ﻿using ExpenseTracker.DTOs;
-using ExpenseTracker.Models;
+using ExpenseTracker.Model;
 using ExpenseTracker.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
